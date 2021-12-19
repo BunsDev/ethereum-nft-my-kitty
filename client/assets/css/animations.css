@@ -1,0 +1,101 @@
+.movingHead {
+    animation: moveHead 5s infinite;
+}
+
+.movingEarLeft {
+    animation: moveEarLeft 5s infinite;
+}
+
+.movingEarRight {
+    animation: moveEarRight 5s infinite;
+}
+
+.wanderingEyes {
+    animation: wanderEyes 3s infinite;
+}
+
+.wigglingTail {
+    animation: wiggleTail 1s infinite;
+}
+
+.jumpingPaws {
+    animation: jumpPaws 1s infinite;
+}
+
+@keyframes moveHead {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(7deg);
+    }
+    70% {
+        transform: rotate(-7deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes moveEarLeft {
+    0%, 100% {
+        transform: rotate(90deg);
+    }
+    30% {
+        transform: rotate(97deg);
+    }
+    70% {
+        transform: rotate(83deg);
+    }  
+}
+
+@keyframes moveEarRight {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(7deg);
+    }
+    70% {
+        transform: rotate(-7deg);
+    }  
+}
+
+@keyframes wanderEyes {
+    0% {
+        left: 12px;
+    }
+    30% {
+        left: 7px;
+    }
+    70% {
+        left: 17px;
+    }
+    100% {
+        left: 12px;
+    }
+}
+
+@keyframes wiggleTail {
+    0% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(50deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes jumpPaws {
+    0% {
+        top: 155px;
+    }
+    50% {
+        top: 145px;
+    }
+    100% {
+        top: 155px;
+    }
+}
